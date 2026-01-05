@@ -1,4 +1,4 @@
-MEU PORTIFÓLIO REPONSIVO 🌟
+MEU PORTIFÓLio 🌟
 
   ## LINK  https://nkandre.github.io/portifolio-andre/
 
