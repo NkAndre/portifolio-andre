@@ -4,67 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Meu portifólio- andré</title>
+    <title>Meu Portfólio - André Santos</title>
 </head>
 <body>
-    <div class="particulas">
+    <div class="particulas"></div>
 
-    </div>
     <nav class="navegacao">
-            <ul class="menu">
-                <li>
-                    <a href="#inicio" class="menu-link">Inicio</a>
-                </li>
-
-                <li>
-                    <a href="#sobre" class="menu-link">Sobre</a>
-                </li>
-
-                <li>
-                    <a href="#projetos" class="menu-link">Projetos</a>
-                </li>
-
-                <li>
-                    <a href="#contatos" class="menu-link">Contatos</a>
-                </li>
-
-            </ul>
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contatos" class="menu-link">Contatos</a></li>
+        </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
-        
-            <img src="./img/andre.jpeg" alt="minha foto-André" class="perfil">
-            <h1>André Santos</h1>
-            <p class="text">Desenvolvedor Fullstack</p>
-        
+        <img src="./img/andre2.jpeg" alt="Minha foto - André" class="perfil">
+        <h1>André Santos</h1>
+        <p class="text">Desenvolvedor Fullstack</p>
     </main>
 
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-box">
-            <p class="sobre-paragrafo">Prazer ! Eu sou um desenvolvedor fullstack, com foco em backend, afins de realizar projetos que resolva problemas! Sou incrivelmente apaixonado por programação, lógica, design e muito mais! <br>
-            <br><b>minhas stacks</b>
-
-            <div class="left"><br>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
-            <img width="12" />
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
-            <img width="12"/>
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo" style="filter: brightness(1.1);" />
-            <img width="12" />
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
-            <img width="12" />
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo"  />
-            <img width="12"/>
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
-            </div>
-                    
+            <p class="sobre-paragrafo">
+             Prazer! Sou desenvolvedor Fullstack com sólida base em Java e Spring Boot para o ecossistema Backend. No Front-end, utilizo JavaScript para criar interfaces dinâmicas e funcionais. Sou movido por resolver problemas reais através da lógica e do código, sempre buscando o equilíbrio entre performance e design.
             </p>
+            
+            <div class="stacks-container">
+                <p><strong>Minhas Stacks</strong></p>
+                <div class="logos-flex">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="Java">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" height="40" alt="Spring">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -72,83 +46,53 @@
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
             <div class="projetos-card">
-                <img src="./img/pergunta.png" alt="projeto do quiz gta 5" class="projetos-imagem">
-
+                <img src="./img/diagrama.png" alt="Diagrama de classe" class="projetos-imagem">
                 <div class="caixinha">
-                <h3 class="infor-projetos">Quiz gta V</h3>
-                <p class="paragrafo-projetos">Totalmente interativo com desafios insanos sobre seu coanhecimento sobre gta 5</p> 
-
-                <p class="logo">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"/>
-                <img width=""/>
-
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo" />
-                <img width=""/>
-
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo" />
-
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo" style="filter: brightness(1.1);" />
-                <img width="" />
-                </p>
+                    <h3 class="infor-projetos">Sistema Bancário POO</h3>
+                    <p class="paragrafo-projetos">Diagrama de classe de um projeto pessoal que consiste em um sistema bancário com foco em POO - Java.</p> 
+                    <div class="logo-projeto">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="Java">
+                    </div>
                 </div>
             </div>
 
-                <div class="projetos-card">
-                <img src="./img/zooApp.png" alt="projeto zooApp" class="projetos-imagem">
-
+            <div class="projetos-card">
+                <img src="./img/dashboard.png" alt="Controle financeiro" class="projetos-imagem">
                 <div class="caixinha">
-                <h3 class="infor-projetos">Aplicativo zooSp</h3>
-                <p class="paragrafo-projetos">Aplicativo inspirado no zoológico de são paulo, contendendo informações, curiosidade, alimentação, habitat e muito mais ! 
-                </p>
-
-                <p class="logo">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
-                </p>
+                    <h3 class="infor-projetos">Controle Financeiro</h3>
+                    <p class="paragrafo-projetos">App desktop em Java Swing para controle de despesas e receitas, com MySQL.</p>
+                    <div class="logo-projeto">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="Java">
+                    </div>
                 </div>
             </div>
 
-                <div class="projetos-card">
-                <img src="./img/helpdesk.png" alt="projeto HelpDesk" class="projetos-imagem">
-
+            <div class="projetos-card">
+                <img src="./img/todo.png" alt="to-do list" class="projetos-imagem">
                 <div class="caixinha">
-                <h3 class="infor-projetos">HelpDesk</h3>
-                <p class="paragrafo-projetos">Simulação de helpDesk, onde você detalha algum problema como defeitos em software ou hardware,e  depois podendo listar suas solicitações</p>
-                <p class="logo">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"/>
-                <img width=""/>
-
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo" />
-                <img width=""/>
-
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo" style="filter: brightness(1.1);" />
-                <img width="" />
-
-
-                </p>
+                    <h3 class="infor-projetos">Gerenciador de Tarefas</h3>
+                    <p class="paragrafo-projetos">To-do list com temas dark e light responsivo.</p>
+                    <div class="logo-projeto">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="HTML">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="CSS">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="JS">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="contatos" class="contatos">
-        <h2 class="contatos-titulos">Entre em contato</h2>
+        <h2 class="contatos-titulos">Entre em Contato</h2>
         <form class="formulario-contato" id="formulario">
-
             <div class="grupo-form">
-                <input placeholder="Nome:" id="nome" class="campo-form">
+                <input type="text" placeholder="Nome:" id="nome" class="campo-form">
             </div>
-
             <div class="grupo-form">
                 <textarea class="campo-form" id="mensagem" placeholder="Escreva sua mensagem:" rows="4"></textarea> 
             </div>
             <button type="submit" class="btn">Enviar</button>
-            
-
         </form>
-        
-
     </section>
-
-
 </body>
 </html>

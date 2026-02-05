@@ -21,6 +21,7 @@ html {
 body {
     background-color: var(--escuro);
     color: var(--claro);
+    overflow-x: hidden;
 }
 
 /* --- NAVEGAÇÃO --- */
@@ -71,23 +72,25 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 80px 20px 20px 20px;
 }
 
 .perfil {
-    max-width: 320px;
+    max-width: 280px;
+    width: 100%;
     height: auto;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
     border: 5px solid var(--vidro);
     border-radius: 20px;
     animation: flutuar 5s ease-in-out infinite;
+    object-fit: cover;
 }
 
 h1 {
-    font-size: clamp(2rem, 8vw, 3.5rem); /* Fonte fluida */
+    font-size: clamp(2rem, 8vw, 3.5rem);
     color: var(--primaria);
     font-weight: bold;
-    margin: 20px;
+    margin: 20px 0;
     text-align: center;
 }
 
@@ -97,21 +100,28 @@ h1 {
     text-align: center;
 }
 
-/* --- SOBRE --- */
+/* --- SOBRE (Centralizado) --- */
 .sobre {
     padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sobre-titulo {
     font-size: 3rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .sobre-box {
-    padding: 2rem;
+    padding: 2.5rem;
     max-width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     border-radius: 20px;
     border: 1px solid var(--vidro);
     backdrop-filter: blur(20px);
@@ -119,11 +129,25 @@ h1 {
 }
 
 .sobre-paragrafo {
-    text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
 }
 
-/* --- PROJETOS (Ajustado para colunas) --- */
+.stacks-container p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: var(--claro);
+}
+
+.logos-flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* --- PROJETOS --- */
 .projetos {
     padding: 6rem 2rem;
 }
@@ -136,28 +160,26 @@ h1 {
 
 .projetos-caixa {
     display: grid;
-    /* Aqui o segredo: ele tenta colocar o máximo de colunas de 320px que couberem */
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2.5rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .projetos-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 18px;
-    backdrop-filter: blur(5px);
     border: 1px solid var(--vidro);
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: 0.4s;
     display: flex;
     flex-direction: column;
 }
 
 .projetos-card:hover {
-    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.4);
     transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.3);
 }
 
 .projetos-imagem {
@@ -171,28 +193,25 @@ h1 {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .infor-projetos {
-    margin-top: 15px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-/* Estilo para as logos de linguagens dentro do card */
-.infor-projetos img {
-    height: 30px;
-    width: auto;
-    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: var(--primaria);
 }
 
 .paragrafo-projetos {
-    color: rgba(226, 232, 240, 0.8);
-    line-height: 1.5;
-    margin: 10px 0;
+    font-size: 1rem;
+    color: #cbd5e1;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.logo-projeto {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
 }
 
 /* --- CONTATOS --- */
@@ -203,72 +222,63 @@ h1 {
 .contatos-titulos {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .formulario-contato {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.05);
     padding: 2rem;
-    border: 1px solid var(--vidro);
     border-radius: 16px;
+    border: 1px solid var(--vidro);
 }
 
 .campo-form {
     width: 100%;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 9px;
+    background: rgba(0, 0, 0, 0.2);
     border: 1px solid var(--vidro);
-    color: var(--claro);
-    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 1rem;
+    outline: none;
 }
 
 .btn {
-    color: var(--claro);
-    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
-    padding: 1rem;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    font-weight: bold;
     width: 100%;
+    padding: 1rem;
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
     transition: 0.3s;
 }
 
 .btn:hover {
+    opacity: 0.9;
     transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
-/* --- EFEITOS --- */
+/* --- ANIMAÇÕES E FUNDO --- */
 .particulas {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     z-index: -1;
-    opacity: 0.5;
-    background: radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
+    background: radial-gradient(circle at 15% 25%, var(--primaria) 0%, transparent 25%),
+                radial-gradient(circle at 85% 75%, var(--secundaria) 0%, transparent 25%),
                 var(--maisEscuro);
+    opacity: 0.4;
 }
 
 @keyframes flutuar {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-15px); }
 }
 
-/* --- MEDIA QUERIES (Ajustes Finais) --- */
 @media (max-width: 768px) {
-    .menu { gap: 1rem; }
-    
-    .sobre-paragrafo { font-size: 1.2rem; }
-    
-    .projetos-caixa {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
-    }
+    .menu { gap: 1.5rem; font-size: 0.9rem; }
+    .sobre-box { padding: 1.5rem; }
 }
