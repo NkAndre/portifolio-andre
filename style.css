@@ -282,3 +282,54 @@ h1 {
     .menu { gap: 1.5rem; font-size: 0.9rem; }
     .sobre-box { padding: 1.5rem; }
 }
+
+
+.botoes-projeto {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+
+.btn-card {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #6a11cb;
+    border: 2px solid #6a11cb;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+.btn-card:hover {
+    background-color: #4a0e91;
+    border-color: #4a0e91;
+    transform: translateY(-3px); 
+}
+
+.btn-card.outline {
+    background-color: transparent;
+    border-color: #6a11cb;
+    color: #ffffff;
+}
+
+.btn-card.outline:hover {
+    background-color: #6a11cb;
+    color: #fff;
+}
+
+.logo-projeto {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 15px;               
+    margin: 20px 0;          
+}
+
+.logo-projeto img {
+    display: block;
+}
