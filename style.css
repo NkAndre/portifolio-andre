@@ -9,15 +9,14 @@
         scroll-behavior: smooth;
     }
 
-    :root {
-        --primaria: #6366f1;     /* Indigo moderno */
-        --secundaria: #a855f7;   /* Roxo suave */
-        --escuro: #020617;       /* Azul quase preto (Slate 950) */
-        --maisEscuro: #000000;   
-        --claro: #f8fafc;
-        --vidro: rgba(255, 255, 255, 0.03); /* Vidro bem sutil */
-    }
-
+:root {
+    --primaria: #fbbf24;     /* Âmbar / Ouro */
+    --secundaria: #f59e0b;   /* Laranja queimado */
+    --escuro: #0a0a0a;       /* Preto quase absoluto */
+    --maisEscuro: #000000;   
+    --claro: #f1f1f1;
+    --vidro: rgba(255, 255, 255, 0.05);
+}
     body {
         background-color: var(--escuro);
         color: var(--claro);
