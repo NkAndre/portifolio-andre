@@ -38,7 +38,7 @@ Este é meu portfólio pessoal, desenvolvido para centralizar minha trajetória 
 
 ## 🎯 Objetivo
 
-Apresentar meus conhecimentos e projetos na área de desenvolvimento de software, com foco em **Back-End**, utilizando tecnologias como **Java, Spring Boot, Node.js, Laravel e bancos de dados**. Busco evoluir constantemente minhas habilidades, desenvolver soluções eficientes e conquistar uma oportunidade para atuar profissionalmente na área de tecnologia.
+Apresentar meus conhecimentos e projetos na área de desenvolvimento de software, com foco em **Back-End**, utilizando tecnologias como **Java, Node.js, Laravel e bancos de dados**. Busco evoluir constantemente minhas habilidades, desenvolver soluções eficientes e conquistar uma oportunidade para atuar profissionalmente na área de tecnologia.
 
 ---
 
