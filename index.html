@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <title>Meu Portfólio - André Santos</title>
     <script src="./js/Contato.js" defer></script>
+    <script src="./js/Carrosel.js" defer></script>
 </head>
 
 <body>
@@ -75,73 +76,38 @@
 
     <section id="projetos" class="projetos">
         <h2 class="projetos-titulo">Meus Projetos</h2>
-        <div class="projetos-caixa">
-            <div class="projetos-card">
-                <img src="./img/diagrama.png" alt="Diagrama de classe" class="projetos-imagem">
-                <div class="caixinha">
-                    <h3 class="infor-projetos">Sistema Bancário POO</h3>
-                    <p class="paragrafo-projetos">Diagrama de classe de um projeto pessoal que consiste em um sistema
-                        bancário com foco em POO - Java.</p>
 
-                    <div class="logo-projeto">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30"
-                            alt="Java">
-                    </div>
 
-                    <div class="botoes-projeto">
-                        <a href="https://github.com/NkAndre/sistema-bancario" target="_blank"
-                            class="btn-card">GitHub</a>
-                        <a href="#" target="_blank" class="btn-card outline">Demo</a>
-                    </div>
+        <div class="carrossel-container">
+            <div class="carrossel-slides">
+                <div class="slide ativo">
+                    <img src="./img/cuidaFacilCanvas.png" alt="Culto 1">
+                    <div class="legenda">Cuida Facil</div>
+                    
+                    
+                </div>
+                
+                <div class="slide">
+                    <img src="./img/dashboard.png" alt="controle-financeiro" width="1000" height="1000">
+                    <div class="legenda">Controle Financeiro</div>
+                </div>
+                <div class="slide">
+                    <img src="./img/diagrama.png" alt="Poo sistema-bancario">
+                    <div class="legenda">Sistema Bancário POO</div>
                 </div>
             </div>
 
-            <div class="projetos-card">
-                <img src="./img/dashboard.png" alt="Controle financeiro" class="projetos-imagem">
-                <div class="caixinha">
-                    <h3 class="infor-projetos">Controle Financeiro</h3>
-                    <p class="paragrafo-projetos">App desktop em Java Swing para controle de despesas e receitas, com
-                        MySQL.</p>
+            <button class="btn-carrossel prev" id="btn-prev">&#10094;</button>
+            <button class="btn-carrossel next" id="btn-next">&#10095;</button>
 
-                    <div class="logo-projeto">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30"
-                            alt="Java">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                            height="30" alt="MySQL">
-                    </div>
+            <div class="carrossel-indicadores">
+                <span class="indicador ativo" data-index="0"></span>
+                <span class="indicador" data-index="1"></span>
+                <span class="indicador" data-index="2"></span>
 
-                    <div class="botoes-projeto">
-                        <a href="https://github.com/NkAndre/controle-financeiro" target="_blank"
-                            class="btn-card">GitHub</a>
-                        <a href="" target="_blank" class="btn-card outline">Ver Demo</a>
-                    </div>
-                </div>
             </div>
+        </div>
 
-            <div class="projetos-card">
-                <img src="./img/cuidaFacilCanvas.png" alt="tela do app santander" class="projetos-imagem">
-                <div class="caixinha">
-                    <h3 class="infor-projetos">Cuida Facil</h3>
-                    <p class="paragrafo-projetos">Aplicativo mobile desenvolvido em React Native para gerenciamento e
-                        acompanhamento da saúde pessoal.</p>
-                    <div class="logo-projeto">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                            height="40" alt="React Native">
-
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
-                            height="40" />
-
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                            alt="MySQL" height="40">
-                    </div>
-
-                    <div class="botoes-projeto">
-                        <a href="https://github.com/NkAndre/controleFinanceiro-santander" target="_blank"
-                            class="btn-card">GitHub</a>
-                        <a href="" target="_blank" class="btn-card outline">Ver Demo</a>
-                    </div>
-                </div>
-            </div>
     </section>
 
     <!-- FORMS VIA WHATSAPP -->
