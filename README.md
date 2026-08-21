@@ -1,7 +1,7 @@
 # MEU PORTFÓLIO 🌟
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-green?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-blue?style=for-the-badge" alt="Status">
 </p>
 
 ## 🔗 Link de Acesso
