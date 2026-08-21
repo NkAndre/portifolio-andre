@@ -37,7 +37,8 @@ Este é meu portfólio pessoal, desenvolvido para centralizar minha trajetória 
 ---
 
 ## 🎯 Objetivo
-Meu objetivo principal é demonstrar a aplicação prática de conceitos de **POO (Programação Orientada a Objetos)**, o desenvolvimento de APIs robustas e a criação de interfaces modernas, construindo uma presença sólida na comunidade dev e colaborando em projetos inovadores.
+
+Apresentar meus conhecimentos e projetos na área de desenvolvimento de software, com foco em **Back-End**, utilizando tecnologias como **Java, Spring Boot, Node.js, Laravel e bancos de dados**. Busco evoluir constantemente minhas habilidades, desenvolver soluções eficientes e conquistar uma oportunidade para atuar profissionalmente na área de tecnologia.
 
 ---
 
